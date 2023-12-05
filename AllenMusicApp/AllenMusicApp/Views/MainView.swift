@@ -10,7 +10,13 @@ import UIKit
 class MainView: UIView {
     
     
-    //MARK: - 네비게이션 바
+    //MARK: - 테이블 뷰
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return tableView
+    }()
 
     let label: UILabel = {
         let label = UILabel()
@@ -34,11 +40,16 @@ class MainView: UIView {
     
     func setupLayout() {
         
-        [label].forEach { addSubview($0) }
+        [label, tableView].forEach { addSubview($0) }
         
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: centerXAnchor),
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
+            
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 }
