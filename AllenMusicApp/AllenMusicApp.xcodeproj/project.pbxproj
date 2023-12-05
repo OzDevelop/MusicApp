@@ -13,9 +13,6 @@
 		11DCBF322B1EF2580051050E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF302B1EF2580051050E /* Main.storyboard */; };
 		11DCBF342B1EF2590051050E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF332B1EF2590051050E /* Assets.xcassets */; };
 		11DCBF372B1EF2590051050E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF352B1EF2590051050E /* LaunchScreen.storyboard */; };
-		11DCBF422B1EF2590051050E /* AllenMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */; };
-		11DCBF4C2B1EF2590051050E /* AllenMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */; };
-		11DCBF4E2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		11DCBF362B1EF2590051050E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11DCBF382B1EF2590051050E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11DCBF3D2B1EF2590051050E /* AllenMusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllenMusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppTests.swift; sourceTree = "<group>"; };
 		11DCBF472B1EF2590051050E /* AllenMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllenMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppUITests.swift; sourceTree = "<group>"; };
-		11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				11DCBF292B1EF2580051050E /* AllenMusicApp */,
-				11DCBF402B1EF2590051050E /* AllenMusicAppTests */,
-				11DCBF4A2B1EF2590051050E /* AllenMusicAppUITests */,
 				11DCBF282B1EF2580051050E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +93,11 @@
 			children = (
 				11DCBF2A2B1EF2580051050E /* AppDelegate.swift */,
 				11DCBF2C2B1EF2580051050E /* SceneDelegate.swift */,
-				11DCBF2E2B1EF2580051050E /* ViewController.swift */,
+				11DCBF5A2B1EF3250051050E /* Helpers */,
+				11DCBF5E2B1EF33A0051050E /* Networking */,
+				11DCBF5D2B1EF3340051050E /* Models */,
+				11DCBF5C2B1EF3310051050E /* Views */,
+				11DCBF5B2B1EF32B0051050E /* Controllers */,
 				11DCBF302B1EF2580051050E /* Main.storyboard */,
 				11DCBF332B1EF2590051050E /* Assets.xcassets */,
 				11DCBF352B1EF2590051050E /* LaunchScreen.storyboard */,
@@ -110,21 +106,40 @@
 			path = AllenMusicApp;
 			sourceTree = "<group>";
 		};
-		11DCBF402B1EF2590051050E /* AllenMusicAppTests */ = {
+		11DCBF5A2B1EF3250051050E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */,
 			);
-			path = AllenMusicAppTests;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		11DCBF4A2B1EF2590051050E /* AllenMusicAppUITests */ = {
+		11DCBF5B2B1EF32B0051050E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */,
-				11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */,
+				11DCBF2E2B1EF2580051050E /* ViewController.swift */,
 			);
-			path = AllenMusicAppUITests;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11DCBF5C2B1EF3310051050E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11DCBF5D2B1EF3340051050E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11DCBF5E2B1EF33A0051050E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DCBF422B1EF2590051050E /* AllenMusicAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DCBF4C2B1EF2590051050E /* AllenMusicAppUITests.swift in Sources */,
-				11DCBF4E2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
