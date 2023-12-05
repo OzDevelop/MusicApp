@@ -64,7 +64,7 @@ class TableViewCell: UITableViewCell {
     
     var imageUrl: String? {
         didSet {
-            
+            loadImage()
         }
     }
 
@@ -99,7 +99,7 @@ class TableViewCell: UITableViewCell {
             mainImageView.heightAnchor.constraint(equalToConstant: 100),
             mainImageView.widthAnchor.constraint(equalToConstant: 100),
             mainImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
-            mainImageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
+            mainImageView.trailingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: -20),
             mainImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor)
         ])
     }
@@ -108,11 +108,24 @@ class TableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10),
             stackView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -10),
-            stackView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
+            stackView.leadingAnchor.constraint(equalTo: mainImageView.trailingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
         ])
     }
     
+    private func loadImage() {
+        guard let urlString = self.imageUrl, let url = URL(string: urlString) else { return }
+        
+        DispatchQueue.global().async {
+            guard let data = try? Data(contentsOf: url) else { return }
+            
+            guard self.imageUrl! == url.absoluteString else { return }
+            
+            DispatchQueue.main.async {
+                self.mainImageView.image = UIImage(data: data)
+            }
+        }
+    }
     
     
     
