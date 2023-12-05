@@ -10,7 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     private var mainView = MainView()
-    var music: [Music] = Music.dummyArray
+    
+    var networkManager: NetworkManager = NetworkManager.shared
+    var musics: [Music] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +24,27 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         setupTableView()
+        setupDatas()
     }
     
     func setupTableView() {
         mainView.tableView.dataSource = self
         mainView.tableView.register(TableViewCell.self, forCellReuseIdentifier: "MusicCell")
+    }
+    
+    func setupDatas() {
+        networkManager.fetchMusic(searchTerm: "kpop") { result in
+            print(#function)
+            switch result {
+            case .success(let musicDatas):
+                self.musics = musicDatas
+                DispatchQueue.main.async {
+                    self.mainView.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -34,7 +52,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(#function)
-        return music.count
+        return musics.count
         
     }
     
@@ -44,11 +62,11 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MusicCell", for: indexPath) as! TableViewCell
         
-        cell.imageUrl = music[indexPath.row].imageUrl
-        cell.albumNameLabel.text = music[indexPath.row].albumName
-        cell.artistNameLabel.text = music[indexPath.row].artistName
-        cell.releaseDateLabel.text = music[indexPath.row].releaseDateString
-        cell.songNameLabel.text = music[indexPath.row].songName
+        cell.imageUrl = musics[indexPath.row].imageUrl
+        cell.albumNameLabel.text = musics[indexPath.row].albumName
+        cell.artistNameLabel.text = musics[indexPath.row].artistName
+        cell.releaseDateLabel.text = musics[indexPath.row].releaseDateString
+        cell.songNameLabel.text = musics[indexPath.row].songName
         
         return cell
     }

@@ -17,6 +17,7 @@
 		11DCBF622B1EF5660051050E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF612B1EF5660051050E /* MainView.swift */; };
 		11DCBF642B1F01CD0051050E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF632B1F01CC0051050E /* TableViewCell.swift */; };
 		11DCBF662B1F0E8D0051050E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF652B1F0E8D0051050E /* Music.swift */; };
+		11F2FCB32B1F4B1D00BEAC9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2FCB22B1F4B1D00BEAC9F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		11DCBF612B1EF5660051050E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		11DCBF632B1F01CC0051050E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		11DCBF652B1F0E8D0051050E /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		11F2FCB22B1F4B1D00BEAC9F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		11DCBF5E2B1EF33A0051050E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				11F2FCB22B1F4B1D00BEAC9F /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				11DCBF2B2B1EF2580051050E /* AppDelegate.swift in Sources */,
 				11DCBF2D2B1EF2580051050E /* SceneDelegate.swift in Sources */,
 				11DCBF642B1F01CD0051050E /* TableViewCell.swift in Sources */,
+				11F2FCB32B1F4B1D00BEAC9F /* NetworkManager.swift in Sources */,
 				11DCBF662B1F0E8D0051050E /* Music.swift in Sources */,
 				11DCBF622B1EF5660051050E /* MainView.swift in Sources */,
 				11DCBF602B1EF3EA0051050E /* Constants.swift in Sources */,
