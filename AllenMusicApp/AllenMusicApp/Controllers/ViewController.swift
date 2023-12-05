@@ -8,10 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var mainView = MainView()
+    
+    
+    override func loadView() {
+        view = mainView
+        
+        navigationItem.title = "Music Search"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
