@@ -61,6 +61,12 @@ class TableViewCell: UITableViewCell {
         
         return sv
     }()
+    
+    var imageUrl: String? {
+        didSet {
+            
+        }
+    }
 
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

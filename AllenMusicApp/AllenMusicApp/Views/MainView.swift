@@ -18,12 +18,11 @@ class MainView: UIView {
         return tableView
     }()
 
-    let label: UILabel = {
-        let label = UILabel()
-        label.text = "text 제발 나와라예"
-        label.backgroundColor = .gray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    let searchController: UISearchController = {
+        let searchController = UISearchController()
+        searchController.searchBar.autocapitalizationType = .none
+        
+        return searchController
     }()
     
     override init(frame: CGRect) {
@@ -40,12 +39,9 @@ class MainView: UIView {
     
     func setupLayout() {
         
-        [label, tableView].forEach { addSubview($0) }
+        [tableView].forEach { addSubview($0) }
         
         NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: centerYAnchor),
-            
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),

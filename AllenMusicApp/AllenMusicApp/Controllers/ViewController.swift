@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         view = mainView
         
         navigationItem.title = "Music Search"
+        navigationItem.searchController = mainView.searchController
         navigationController?.navigationBar.prefersLargeTitles = true
         
         setupTableView()
