@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11DCBF2B2B1EF2580051050E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF2A2B1EF2580051050E /* AppDelegate.swift */; };
+		11DCBF2D2B1EF2580051050E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF2C2B1EF2580051050E /* SceneDelegate.swift */; };
+		11DCBF2F2B1EF2580051050E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF2E2B1EF2580051050E /* ViewController.swift */; };
+		11DCBF322B1EF2580051050E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF302B1EF2580051050E /* Main.storyboard */; };
+		11DCBF342B1EF2590051050E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF332B1EF2590051050E /* Assets.xcassets */; };
+		11DCBF372B1EF2590051050E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DCBF352B1EF2590051050E /* LaunchScreen.storyboard */; };
+		11DCBF422B1EF2590051050E /* AllenMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */; };
+		11DCBF4C2B1EF2590051050E /* AllenMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */; };
+		11DCBF4E2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11DCBF3E2B1EF2590051050E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DCBF1F2B1EF2580051050E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DCBF262B1EF2580051050E;
+			remoteInfo = AllenMusicApp;
+		};
+		11DCBF482B1EF2590051050E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DCBF1F2B1EF2580051050E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DCBF262B1EF2580051050E;
+			remoteInfo = AllenMusicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11DCBF272B1EF2580051050E /* AllenMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllenMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DCBF2A2B1EF2580051050E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11DCBF2C2B1EF2580051050E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11DCBF2E2B1EF2580051050E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11DCBF312B1EF2580051050E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11DCBF332B1EF2590051050E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11DCBF362B1EF2590051050E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11DCBF382B1EF2590051050E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DCBF3D2B1EF2590051050E /* AllenMusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllenMusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppTests.swift; sourceTree = "<group>"; };
+		11DCBF472B1EF2590051050E /* AllenMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllenMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppUITests.swift; sourceTree = "<group>"; };
+		11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllenMusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11DCBF242B1EF2580051050E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF3A2B1EF2590051050E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF442B1EF2590051050E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11DCBF1E2B1EF2580051050E = {
+			isa = PBXGroup;
+			children = (
+				11DCBF292B1EF2580051050E /* AllenMusicApp */,
+				11DCBF402B1EF2590051050E /* AllenMusicAppTests */,
+				11DCBF4A2B1EF2590051050E /* AllenMusicAppUITests */,
+				11DCBF282B1EF2580051050E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11DCBF282B1EF2580051050E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11DCBF272B1EF2580051050E /* AllenMusicApp.app */,
+				11DCBF3D2B1EF2590051050E /* AllenMusicAppTests.xctest */,
+				11DCBF472B1EF2590051050E /* AllenMusicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11DCBF292B1EF2580051050E /* AllenMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				11DCBF2A2B1EF2580051050E /* AppDelegate.swift */,
+				11DCBF2C2B1EF2580051050E /* SceneDelegate.swift */,
+				11DCBF2E2B1EF2580051050E /* ViewController.swift */,
+				11DCBF302B1EF2580051050E /* Main.storyboard */,
+				11DCBF332B1EF2590051050E /* Assets.xcassets */,
+				11DCBF352B1EF2590051050E /* LaunchScreen.storyboard */,
+				11DCBF382B1EF2590051050E /* Info.plist */,
+			);
+			path = AllenMusicApp;
+			sourceTree = "<group>";
+		};
+		11DCBF402B1EF2590051050E /* AllenMusicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				11DCBF412B1EF2590051050E /* AllenMusicAppTests.swift */,
+			);
+			path = AllenMusicAppTests;
+			sourceTree = "<group>";
+		};
+		11DCBF4A2B1EF2590051050E /* AllenMusicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11DCBF4B2B1EF2590051050E /* AllenMusicAppUITests.swift */,
+				11DCBF4D2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift */,
+			);
+			path = AllenMusicAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11DCBF262B1EF2580051050E /* AllenMusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DCBF512B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicApp" */;
+			buildPhases = (
+				11DCBF232B1EF2580051050E /* Sources */,
+				11DCBF242B1EF2580051050E /* Frameworks */,
+				11DCBF252B1EF2580051050E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AllenMusicApp;
+			productName = AllenMusicApp;
+			productReference = 11DCBF272B1EF2580051050E /* AllenMusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11DCBF3C2B1EF2590051050E /* AllenMusicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DCBF542B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicAppTests" */;
+			buildPhases = (
+				11DCBF392B1EF2590051050E /* Sources */,
+				11DCBF3A2B1EF2590051050E /* Frameworks */,
+				11DCBF3B2B1EF2590051050E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DCBF3F2B1EF2590051050E /* PBXTargetDependency */,
+			);
+			name = AllenMusicAppTests;
+			productName = AllenMusicAppTests;
+			productReference = 11DCBF3D2B1EF2590051050E /* AllenMusicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11DCBF462B1EF2590051050E /* AllenMusicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DCBF572B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicAppUITests" */;
+			buildPhases = (
+				11DCBF432B1EF2590051050E /* Sources */,
+				11DCBF442B1EF2590051050E /* Frameworks */,
+				11DCBF452B1EF2590051050E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DCBF492B1EF2590051050E /* PBXTargetDependency */,
+			);
+			name = AllenMusicAppUITests;
+			productName = AllenMusicAppUITests;
+			productReference = 11DCBF472B1EF2590051050E /* AllenMusicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11DCBF1F2B1EF2580051050E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					11DCBF262B1EF2580051050E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					11DCBF3C2B1EF2590051050E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 11DCBF262B1EF2580051050E;
+					};
+					11DCBF462B1EF2590051050E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 11DCBF262B1EF2580051050E;
+					};
+				};
+			};
+			buildConfigurationList = 11DCBF222B1EF2580051050E /* Build configuration list for PBXProject "AllenMusicApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11DCBF1E2B1EF2580051050E;
+			productRefGroup = 11DCBF282B1EF2580051050E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11DCBF262B1EF2580051050E /* AllenMusicApp */,
+				11DCBF3C2B1EF2590051050E /* AllenMusicAppTests */,
+				11DCBF462B1EF2590051050E /* AllenMusicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11DCBF252B1EF2580051050E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DCBF372B1EF2590051050E /* LaunchScreen.storyboard in Resources */,
+				11DCBF342B1EF2590051050E /* Assets.xcassets in Resources */,
+				11DCBF322B1EF2580051050E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF3B2B1EF2590051050E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF452B1EF2590051050E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11DCBF232B1EF2580051050E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DCBF2F2B1EF2580051050E /* ViewController.swift in Sources */,
+				11DCBF2B2B1EF2580051050E /* AppDelegate.swift in Sources */,
+				11DCBF2D2B1EF2580051050E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF392B1EF2590051050E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DCBF422B1EF2590051050E /* AllenMusicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DCBF432B1EF2590051050E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DCBF4C2B1EF2590051050E /* AllenMusicAppUITests.swift in Sources */,
+				11DCBF4E2B1EF2590051050E /* AllenMusicAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11DCBF3F2B1EF2590051050E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DCBF262B1EF2580051050E /* AllenMusicApp */;
+			targetProxy = 11DCBF3E2B1EF2590051050E /* PBXContainerItemProxy */;
+		};
+		11DCBF492B1EF2590051050E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DCBF262B1EF2580051050E /* AllenMusicApp */;
+			targetProxy = 11DCBF482B1EF2590051050E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11DCBF302B1EF2580051050E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DCBF312B1EF2580051050E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11DCBF352B1EF2590051050E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DCBF362B1EF2590051050E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11DCBF4F2B1EF2590051050E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11DCBF502B1EF2590051050E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11DCBF522B1EF2590051050E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllenMusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11DCBF532B1EF2590051050E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AllenMusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11DCBF552B1EF2590051050E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllenMusicApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AllenMusicApp";
+			};
+			name = Debug;
+		};
+		11DCBF562B1EF2590051050E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllenMusicApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AllenMusicApp";
+			};
+			name = Release;
+		};
+		11DCBF582B1EF2590051050E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllenMusicApp;
+			};
+			name = Debug;
+		};
+		11DCBF592B1EF2590051050E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YD9645CQWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oz.AllenMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllenMusicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DCBF222B1EF2580051050E /* Build configuration list for PBXProject "AllenMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DCBF4F2B1EF2590051050E /* Debug */,
+				11DCBF502B1EF2590051050E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DCBF512B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DCBF522B1EF2590051050E /* Debug */,
+				11DCBF532B1EF2590051050E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DCBF542B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DCBF552B1EF2590051050E /* Debug */,
+				11DCBF562B1EF2590051050E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DCBF572B1EF2590051050E /* Build configuration list for PBXNativeTarget "AllenMusicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DCBF582B1EF2590051050E /* Debug */,
+				11DCBF592B1EF2590051050E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11DCBF1F2B1EF2580051050E /* Project object */;
+}
