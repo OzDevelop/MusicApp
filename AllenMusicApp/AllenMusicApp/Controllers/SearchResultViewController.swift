@@ -14,19 +14,19 @@ class SearchResultViewController: UIViewController {
         
         flowLayout.scrollDirection = .vertical
         
-        let collectionCellWidth = (UIScreen.main.bounds.width - 1 * (3 - 1)) / 3
+        let collectionCellWidth = (UIScreen.main.bounds.width - CVCell.spacingWitdh * (CVCell.cellColumns - CVCell.spacingWitdh)) / CVCell.cellColumns
         
         flowLayout.itemSize = CGSize(width: collectionCellWidth, height: collectionCellWidth)
         // 아이템 사이 간격 설정
-        flowLayout.minimumInteritemSpacing = 1
+        flowLayout.minimumInteritemSpacing = CVCell.spacingWitdh
         // 아이템 위아래 사이 간격 설정
-        flowLayout.minimumLineSpacing = 1
+        flowLayout.minimumLineSpacing = CVCell.spacingWitdh
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         
-        collectionView.register(MusicCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
+        collectionView.register(MusicCollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .systemBackground
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -97,7 +97,7 @@ extension SearchResultViewController: UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell" , for: indexPath) as! MusicCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.musicCollectionViewCellIdentifier , for: indexPath) as! MusicCollectionViewCell
         
         cell.imageUrl = musics[indexPath.row].imageUrl
         return cell

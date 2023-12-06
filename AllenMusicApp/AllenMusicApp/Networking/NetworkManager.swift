@@ -20,13 +20,11 @@ final class NetworkManager {
     static let shared = NetworkManager()
     
     private init() {}
-    
-    let musicURL = "https://itunes.apple.com/search?media=music"
-    
+        
     typealias NetworkCompletion = (Result<[Music], NetworkError>) -> Void
     
     func fetchMusic(searchTerm: String, completion: @escaping NetworkCompletion) {
-        let urlString = "\(musicURL)&term=\(searchTerm)"
+        let urlString = "\(MusicApi.requestUrl)\(MusicApi.mediaParam)&term=\(searchTerm)"
          
         performRequest(with: urlString) { result in
             completion(result)
