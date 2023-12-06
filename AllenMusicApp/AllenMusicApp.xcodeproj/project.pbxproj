@@ -18,6 +18,8 @@
 		11DCBF642B1F01CD0051050E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF632B1F01CC0051050E /* TableViewCell.swift */; };
 		11DCBF662B1F0E8D0051050E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCBF652B1F0E8D0051050E /* Music.swift */; };
 		11F2FCB32B1F4B1D00BEAC9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2FCB22B1F4B1D00BEAC9F /* NetworkManager.swift */; };
+		11F2FCB52B1F6BEF00BEAC9F /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2FCB42B1F6BEF00BEAC9F /* MusicCollectionViewCell.swift */; };
+		11F2FCB72B2001E200BEAC9F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2FCB62B2001E200BEAC9F /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		11DCBF632B1F01CC0051050E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		11DCBF652B1F0E8D0051050E /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		11F2FCB22B1F4B1D00BEAC9F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		11F2FCB42B1F6BEF00BEAC9F /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		11F2FCB62B2001E200BEAC9F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				11DCBF2E2B1EF2580051050E /* ViewController.swift */,
+				11F2FCB62B2001E200BEAC9F /* SearchResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			children = (
 				11DCBF612B1EF5660051050E /* MainView.swift */,
 				11DCBF632B1F01CC0051050E /* TableViewCell.swift */,
+				11F2FCB42B1F6BEF00BEAC9F /* MusicCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,8 +296,10 @@
 			files = (
 				11DCBF2F2B1EF2580051050E /* ViewController.swift in Sources */,
 				11DCBF2B2B1EF2580051050E /* AppDelegate.swift in Sources */,
+				11F2FCB72B2001E200BEAC9F /* SearchResultViewController.swift in Sources */,
 				11DCBF2D2B1EF2580051050E /* SceneDelegate.swift in Sources */,
 				11DCBF642B1F01CD0051050E /* TableViewCell.swift in Sources */,
+				11F2FCB52B1F6BEF00BEAC9F /* MusicCollectionViewCell.swift in Sources */,
 				11F2FCB32B1F4B1D00BEAC9F /* NetworkManager.swift in Sources */,
 				11DCBF662B1F0E8D0051050E /* Music.swift in Sources */,
 				11DCBF622B1EF5660051050E /* MainView.swift in Sources */,

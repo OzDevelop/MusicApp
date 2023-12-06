@@ -17,9 +17,11 @@ class MainView: UIView {
         
         return tableView
     }()
+    
+    let searchResultViewController = SearchResultViewController()
 
-    let searchController: UISearchController = {
-        let searchController = UISearchController()
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: searchResultViewController)
         searchController.searchBar.autocapitalizationType = .none
         
         return searchController
