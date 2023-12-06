@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     func setupDatas() {
-        networkManager.fetchMusic(searchTerm: "kpop") { result in
+        networkManager.fetchMusic(searchTerm: "jazz") { result in
             print(#function)
             switch result {
             case .success(let musicDatas):
@@ -56,14 +56,11 @@ class ViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(#function)
+
         return musics.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        print(#function)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MusicCell", for: indexPath) as! TableViewCell
         
@@ -76,7 +73,6 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
-
 
 extension ViewController: UISearchResultsUpdating {
     // 유저가 글자를 입력하는 순간마다 호출되는 메서드 ===> 일반적으로 다른 화면을 보여줄때 구현

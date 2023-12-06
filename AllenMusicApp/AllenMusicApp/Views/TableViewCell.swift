@@ -10,6 +10,9 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     //MARK: - 하위 뷰
+    
+    
+    
     let mainImageView: UIImageView = {
        let imageView = UIImageView()
         

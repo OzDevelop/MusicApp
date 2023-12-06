@@ -36,10 +36,10 @@ class MusicCollectionViewCell: UICollectionViewCell {
     func setupLayout() {
         self.addSubview(mainImageView)
         
-        mainImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
-        mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
-        mainImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
-        mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+        mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        mainImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
 
     
